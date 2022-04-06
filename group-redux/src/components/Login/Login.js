@@ -17,12 +17,14 @@ export default function Login() {
     <div className="loginContainer">
       <h1>Login</h1>
       <input
+        value={loginField}
         name="email"
         type="email"
         onChange={changeInputField}
         placeholder="email"
       />
       <input
+        value={loginPassword}
         name="password"
         type="password"
         onChange={changeInputField}
