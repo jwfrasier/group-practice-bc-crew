@@ -6,7 +6,7 @@ import reducers from "./reducers/index";
 import logger from "redux-logger";
 import { createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
-import Dashboard from "./components/Dashboard";
+import Dashboard from "./Dashboard/Dashboard";
 
 const store = createStore(reducers, applyMiddleware(logger));
 
@@ -26,7 +26,6 @@ ReactDOM.render(
           <Route>
             <Route path="/" element={<App />} />
             <Route path="dashboard" element={<Dashboard />} />
-            <App />
           </Route>
         </Routes>
       </BrowserRouter>
