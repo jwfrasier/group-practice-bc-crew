@@ -1,5 +1,5 @@
 import "./App.css";
-import { supabase, userSignUp, getExampleUser } from "./actions/supabase";
+import { supabase, userSignUp, userSignIn } from "./actions/supabase";
 import { useEffect, useState } from "react";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -7,13 +7,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 
 function App() {
+  //replace these variables with state variables (email,pass)
+  let email = "hi@hi.com";
+  let password = "123456";
   useEffect(() => {
-    const getUser = async () => {
-      const data = await userSignUp("hi@hi.com", "1234");
+    const signIn = async () => {
+      const data = await userSignIn(email, password);
       console.log(data);
     };
-    getUser();
-    // console.log("get example user", getExampleUser());
+    signIn();
   }, []);
 
   return (

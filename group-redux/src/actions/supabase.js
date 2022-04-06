@@ -1,7 +1,7 @@
 import { createClient } from "@supabase/supabase-js";
 let supabaseKey =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYyMDE0NTg3OCwiZXhwIjoxOTM1NzIxODc4fQ.0qra9FQYuKCkgMteZ0ZAe2wrMx2v1IFGwsU60Oi4KwY";
-let supabaseUrl = "https://mxakcphctxajogkuteth.supabase.com";
+let supabaseUrl = "https://mxakcphctxajogkuteth.supabase.co";
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 const userSignUp = async (email, password) => {
@@ -15,10 +15,10 @@ const userSignUp = async (email, password) => {
   return user;
 };
 
-const getExampleUser = async () => {
+const userSignIn = async (email, password) => {
   const { user, session, error } = await supabase.auth.signIn({
-    email: "hi@hi.com",
-    password: "1234",
+    email: email,
+    password: password,
   });
   if (error) {
     return error;
@@ -26,4 +26,4 @@ const getExampleUser = async () => {
   return user;
 };
 
-export { supabase, supabaseUrl, supabaseKey, userSignUp, getExampleUser };
+export { supabase, supabaseUrl, supabaseKey, userSignUp, userSignIn };
