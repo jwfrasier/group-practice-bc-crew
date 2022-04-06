@@ -1,0 +1,9 @@
+.dashboardContainer {
+  background-color: mediumturquoise;
+  display: grid;
+  place-items: center;
+}
+
+.header {
+  font-weight: 400;
+}

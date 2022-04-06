@@ -1,10 +1,11 @@
 import "./App.css";
+import Dashboard from "./components/Dashboard/Dashboard";
 
 function App() {
   console.log(process.env);
   return (
     <div className="App">
-      <h1>Group Project</h1>
+      <Dashboard />
     </div>
   );
 }
