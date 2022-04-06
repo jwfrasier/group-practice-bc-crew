@@ -1,0 +1,17 @@
+.loginContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.submit {
+  display: block;
+  padding: 1em;
+  width: 5rem;
+  border: 0;
+  cursor: pointer;
+  font-size: 0.75em;
+  font-weight: 600;
+  text-shadow: 0 1px 0 rgba(black, 0.2);
+}
