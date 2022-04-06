@@ -1,10 +1,20 @@
 import "./App.css";
-import Login from "./components/Login/Login";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Dashboard from "./components/Dashboard/Dashboard";
+import Home from "./components/Home";
+
 function App() {
   return (
     <div className="App">
-      <h1>Group Project</h1>
-      <Login />
+      <BrowserRouter>
+        <Routes>
+          <Route>
+            <Route path="/" element={<Home />} />
+            <Route path="dashboard" element={<Dashboard />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
