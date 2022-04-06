@@ -5,6 +5,7 @@ import Dashboard from "./components/Dashboard/Dashboard";
 import Home from "./components/Home";
 
 function App() {
+  // comment
   return (
     <div className="App">
       <BrowserRouter>
