@@ -20,7 +20,6 @@ export default function Dashboard() {
   ];
   return (
     <>
-      <Navbar />
       <div className="dashboardContainer">
         <div className="textContent">
           <h2 className="userNameHeader header">Username:</h2>
