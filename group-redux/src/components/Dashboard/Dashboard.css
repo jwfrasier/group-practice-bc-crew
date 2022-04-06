@@ -1,7 +1,17 @@
 .dashboardContainer {
-  background-color: mediumturquoise;
   display: grid;
   place-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.textContent {
+  background-color: black;
+  padding: 30px;
+  width: 50%;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
 }
 
 .header {
