@@ -1,6 +1,6 @@
 .dashboardContainer {
   margin-left: 25vw;
-  background-color: pink;
+  background-color: white;
   height: 100vh;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .firstContainer {
-  background-color: aqua;
+  background-color: white;
   display: flex;
   gap: 1rem;
   justify-content: space-between;
@@ -20,41 +20,104 @@
 
 .box1 {
   height: 3rem;
-  width: 10rem;
-  background-color: green;
+  width: 23%;
+  background-color: #42cdca;
+  border-radius: 0.8rem;
 }
 
 .secondContainer {
-  background-color: mediumpurple;
+  background-color: white;
   display: flex;
-  padding: 1rem;
   justify-content: space-between;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 }
 
 .box2-1 {
-  background-color: red;
+  background-color: whitesmoke;
   height: 10rem;
-  width: 6rem;
+  width: 60%;
   display: flex;
-  padding: 1rem;
+  padding: 2%;
   justify-content: space-between;
+  border-radius: 0.8rem;
 }
 
 .box2-1text {
-  background-color: aqua;
+  background-color: #42cdca;
   height: 100%;
-  width: 44%;
+  width: 56%;
 }
 
 .box2-1pic {
-  background-color: aquamarine;
+  background-color: #42cdca;
   height: 100%;
-  width: 44%;
+  width: 36%;
+  border-radius: 0.8rem;
 }
 
 .box2-2 {
-  background-color: blue;
-  height: 10rem;
-  width: 10rem;
-  padding: 1rem;
+  background-color: #42cdca;
+  height: 12rem;
+  width: 34%;
+  margin-bottom: 2%;
+  border-radius: 0.8rem;
+}
+
+.thirdContainer {
+  background-color: white;
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2.5%;
+}
+
+.box3-1 {
+  height: 90%;
+  width: 43%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.box3-2 {
+  height: 90%;
+  width: 52%;
+  background-color: white;
+  padding-right: 3%;
+  padding-top: 0px;
+}
+
+.box3-1pic {
+  background-color: #42cdca;
+  height: 30%;
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.box3-1text {
+  background-color: white;
+  height: 10%;
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+.box3-1container {
+  background-color: #42cdca;
+  height: 47%;
+  width: 100%;
+}
+
+.box3-2text {
+  background-color: #42cdca;
+  height: 15%;
+  width: 100%;
+  margin-bottom: 4%;
+}
+
+.box3-2pic {
+  background-color: #42cdca;
+  height: 70%;
+  width: 100%;
+  border-radius: 0.8rem;
 }

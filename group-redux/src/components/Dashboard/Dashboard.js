@@ -24,6 +24,17 @@ export default function Dashboard() {
           </div>
           <div className="box2-2"></div>
         </div>
+        <div className="thirdContainer">
+          <div className="box3-1">
+            <div className="box3-1pic"></div>
+            <div className="box3-1text"></div>
+            <div className="box3-1container"></div>
+          </div>
+          <div className="box3-2">
+            <div className="box3-2text"></div>
+            <div className="box3-2pic"></div>
+          </div>
+        </div>
       </div>
     </>
   );
