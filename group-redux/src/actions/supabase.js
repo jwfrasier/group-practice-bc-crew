@@ -27,4 +27,18 @@ const userSignIn = async (email, password) => {
   return user;
 };
 
-export { supabase, supabaseUrl, supabaseKey, userSignUp, userSignIn };
+const userSignOut = async () => {
+  const { error } = await supabase.auth.signOut();
+  if (error) {
+    return error;
+  }
+};
+
+export {
+  supabase,
+  supabaseUrl,
+  supabaseKey,
+  userSignUp,
+  userSignIn,
+  userSignOut,
+};

@@ -19,7 +19,7 @@ const user = (state = initialState, action) => {
     case SET_LOGIN_PASSWORD:
       return (state = { ...state, loginPassword: action.payload });
     case SET_LOGGED_IN: {
-      return (state = { ...state, loggedIn: true });
+      return (state = { ...state, loggedIn: action.payload });
     }
     default:
       return state;
