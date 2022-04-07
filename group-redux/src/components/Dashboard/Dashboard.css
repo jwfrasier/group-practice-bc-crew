@@ -1,20 +1,60 @@
 .dashboardContainer {
-  display: grid;
-  place-items: center;
-  width: 100%;
+  margin-left: 25vw;
+  background-color: pink;
   height: 100vh;
 }
 
-.textContent {
-  background-color: black;
-  padding: 30px;
-  width: 50%;
-  border-radius: 20px;
-  text-align: center;
-  color: white;
-  margin-bottom: 1rem;
+.searchContainer {
+  padding: 1rem;
+  display: flex;
+  justify-content: right;
 }
 
-.header {
-  font-weight: 400;
+.firstContainer {
+  background-color: aqua;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.box1 {
+  height: 3rem;
+  width: 10rem;
+  background-color: green;
+}
+
+.secondContainer {
+  background-color: mediumpurple;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.box2-1 {
+  background-color: red;
+  height: 10rem;
+  width: 6rem;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.box2-1text {
+  background-color: aqua;
+  height: 100%;
+  width: 44%;
+}
+
+.box2-1pic {
+  background-color: aquamarine;
+  height: 100%;
+  width: 44%;
+}
+
+.box2-2 {
+  background-color: blue;
+  height: 10rem;
+  width: 10rem;
+  padding: 1rem;
 }
