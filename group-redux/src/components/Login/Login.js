@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { userSignIn, userSignOut } from "../../actions/supabase";
+import { SET_LOGGED_IN } from "../../action-types";
 
 export default function Login() {
   const loginField = useSelector((state) => state.user.loginField);
@@ -21,7 +22,7 @@ export default function Login() {
     let data = await userSignIn(loginField, loginPassword);
     if (data.status !== 400) {
       dispatch({
-        type: "SET_LOGGED_IN",
+        type: SET_LOGGED_IN,
         payload: true,
       });
     } else {
@@ -32,7 +33,7 @@ export default function Login() {
   const logout = async () => {
     userSignOut();
     dispatch({
-      type: "SET_LOGGED_IN",
+      type: SET_LOGGED_IN,
       payload: false,
     });
   };
