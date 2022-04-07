@@ -5,6 +5,14 @@ import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { userSignIn, userSignOut } from "../../actions/supabase";
 import { SET_LOGGED_IN } from "../../action-types";
+import {
+  LoginButton,
+  Container,
+  LoginContainer,
+  Input,
+  SignUp,
+  BoldLink,
+} from "./LoginStyledCompenent";
 
 export default function Login() {
   const loginField = useSelector((state) => state.user.loginField);
@@ -48,25 +56,30 @@ export default function Login() {
   }, [loggedIn]);
 
   return (
-    <div className="loginContainer">
-      <h1>Login</h1>
-      <input
-        value={loginField}
-        name="email"
-        type="email"
-        onChange={changeInputField}
-        placeholder="email"
-      />
-      <input
-        value={loginPassword}
-        name="password"
-        type="password"
-        onChange={changeInputField}
-        placeholder="password"
-      />
-      <button onClick={login} className="submit">
-        Login
-      </button>
-    </div>
+    <Container>
+      <LoginContainer>
+        <h2>Login</h2>
+        <Input
+          value={loginField}
+          name="email"
+          type="email"
+          onChange={changeInputField}
+          placeholder="email"
+        />
+        <Input
+          value={loginPassword}
+          name="password"
+          type="password"
+          onChange={changeInputField}
+          placeholder="password"
+        />
+        <LoginButton onClick={login} className="submit">
+          Login
+        </LoginButton>
+        <SignUp>
+          <BoldLink href="/login"> Sign Up</BoldLink>
+        </SignUp>
+      </LoginContainer>
+    </Container>
   );
 }
