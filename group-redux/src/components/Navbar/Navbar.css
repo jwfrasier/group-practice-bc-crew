@@ -9,6 +9,7 @@
   position: fixed;
   color: white;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: 300ms ease;
 }
 .navbar:hover {
   width: 25vw;
@@ -24,12 +25,17 @@
   margin: 0;
 }
 .navbar:hover .bowl {
-  font-size: 1.1rem;
+  display: none;
 }
 .navbar svg {
   filter: invert(100%) sepia(0%) saturate(525%) hue-rotate(253deg)
     brightness(106%) contrast(102%);
   height: 30px;
+}
+.iconWrapper {
+  width: 10vw;
+  display: flex;
+  justify-content: center;
 }
 .logo {
   width: 100%;
@@ -57,6 +63,7 @@
 }
 .linkTitle {
   margin: 0;
+  text-align: end;
 }
 .link {
   text-decoration: none;
@@ -71,7 +78,7 @@
 }
 .navbar:hover .link {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 .navbar a > p {
@@ -79,6 +86,8 @@
 }
 .navbar:hover a > p {
   display: flex;
+  width: 15vw;
+  text-align: right;
 }
 .link:hover {
   background-color: white;
