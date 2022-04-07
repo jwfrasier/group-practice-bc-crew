@@ -48,25 +48,30 @@ export default function Login() {
   }, [loggedIn]);
 
   return (
-    <div className="loginContainer">
-      <h1>Login</h1>
-      <input
-        value={loginField}
-        name="email"
-        type="email"
-        onChange={changeInputField}
-        placeholder="email"
-      />
-      <input
-        value={loginPassword}
-        name="password"
-        type="password"
-        onChange={changeInputField}
-        placeholder="password"
-      />
-      <button onClick={login} className="submit">
-        Login
-      </button>
+    <div className="container">
+      <div className="loginContainer">
+        <h2>Login</h2>
+        <input
+          value={loginField}
+          name="email"
+          type="email"
+          onChange={changeInputField}
+          placeholder="email"
+        />
+        <input
+          value={loginPassword}
+          name="password"
+          type="password"
+          onChange={changeInputField}
+          placeholder="password"
+        />
+        <button onClick={login} className="submit">
+          Login
+        </button>
+        <div className="signUp">
+          <a href=""> Sign Up</a>
+        </div>
+      </div>
     </div>
   );
 }
