@@ -4,11 +4,27 @@
   flex-direction: column;
   height: 100%;
   z-index: 1;
-  width: 25vw;
-  justify-content: start;
+  width: 10vw;
+  align-items: center;
   position: fixed;
   color: white;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.navbar:hover {
+  width: 25vw;
+}
+.breakfastClub {
+  display: none;
+}
+.navbar:hover .breakfastClub {
+  display: block;
+}
+.bowl {
+  font-size: 2.3rem;
+  margin: 0;
+}
+.navbar:hover .bowl {
+  font-size: 1.1rem;
 }
 .navbar svg {
   filter: invert(100%) sepia(0%) saturate(525%) hue-rotate(253deg)
@@ -23,27 +39,46 @@
   align-items: center;
   text-align: center;
   background-color: #71578b;
-  font-size: 1.3rem;
+  gap: 8px;
   margin: 0;
+
   justify-content: center;
+}
+.logo h2 {
+  font-size: 1.1rem;
 }
 
 .navbarLinks {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  width: 100%;
+  max-width: 100%;
 }
-
+.linkTitle {
+  margin: 0;
+}
 .link {
   text-decoration: none;
   color: white;
   font-size: 24px;
   margin: 0px;
   display: flex;
-  justify-content: space-between;
-
+  justify-content: center;
+  max-width: 100%;
   padding: 20px 20px 20px 20px;
   border-bottom: white solid 1px;
+}
+.navbar:hover .link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar a > p {
+  display: none;
+}
+.navbar:hover a > p {
+  display: flex;
 }
 .link:hover {
   background-color: white;
