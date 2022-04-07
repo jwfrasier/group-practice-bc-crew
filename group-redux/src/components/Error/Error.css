@@ -1,0 +1,27 @@
+* {
+  /* background-color: #42cdca; */
+}
+
+.error {
+  position: relative;
+  text-align: center;
+}
+.bottom {
+  text-align: center;
+}
+.garvey {
+  margin-top: 40px;
+}
+.four {
+  position: absolute;
+  font-size: 8rem;
+  color: #42cdca;
+  bottom: 190px;
+  right: 250px;
+}
+.bottom {
+  color: #42cdca;
+}
+a {
+  color: #42cdca;
+}
