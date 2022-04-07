@@ -1,4 +1,6 @@
 import "./App.css";
+import { supabase, userSignUp, userSignIn } from "./actions/supabase";
+import { useEffect, useState } from "react";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./components/Dashboard/Dashboard";
@@ -6,7 +8,6 @@ import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
 
 function App() {
-  // comment
   return (
     <div className="App">
       <BrowserRouter>
