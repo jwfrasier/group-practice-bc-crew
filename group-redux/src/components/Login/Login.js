@@ -2,7 +2,6 @@ import React from "react";
 import "./Login.css";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-
 import { useSelector, useDispatch } from "react-redux";
 import { userSignIn } from "../../actions/supabase";
 
@@ -18,15 +17,16 @@ export default function Login() {
     });
   };
   //login function
-  const signIn = async () => {
+  const login = async () => {
     let data = await userSignIn(loginField, loginPassword);
-    console.log(data);
-    dispatch({
-      type: "SET_LOGGED_IN",
-    });
-    console.log(loggedIn);
+    if (data.status !== 400) {
+      dispatch({
+        type: "SET_LOGGED_IN",
+      });
+    } else {
+      window.alert("Login failed. Try entering your information again.");
+    }
   };
-
   // redirects to dashboard once logged in
   const navigate = useNavigate();
   useEffect(() => {
@@ -34,6 +34,8 @@ export default function Login() {
       navigate("/dashboard");
     }
   }, [loggedIn]);
+  // sign out -- not called by anything
+  // const signOut =
 
   return (
     <div className="loginContainer">
@@ -52,7 +54,7 @@ export default function Login() {
         onChange={changeInputField}
         placeholder="password"
       />
-      <button onClick={signIn} className="submit">
+      <button onClick={login} className="submit">
         Login
       </button>
     </div>
