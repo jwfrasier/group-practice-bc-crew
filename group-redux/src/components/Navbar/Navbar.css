@@ -1,23 +1,96 @@
 .navbar {
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
-  align-items: center;
+  height: 100%;
+  width: 10vw;
+  z-index: 1;
+  position: fixed;
+  background-color: #554269;
   color: white;
-}
-
-.logo {
-  padding-left: 30px;
-}
-
-.navbarLinks {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   display: flex;
-  width: 20%;
+  flex-direction: column;
+  align-items: center;
+  transition: 300ms ease;
+}
+.navbar:hover {
+  width: 25vw;
+}
+.breakfastClub {
+  display: none;
+}
+.navbar:hover .breakfastClub {
+  font-size: 1.1rem;
+  display: block;
+}
+.bowl {
+  margin: 0;
+  font-size: 2.3rem;
+}
+.navbar:hover .bowl {
+  display: none;
+}
+.logo {
+  min-height: 60px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  background-color: #71578b;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.navbar svg {
+  height: 30px;
+  filter: invert(100%) sepia(0%) saturate(525%) hue-rotate(253deg)
+    brightness(106%) contrast(102%);
+}
+.iconWrapper {
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+}
+.navbarLinks {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 
 .link {
+  max-width: 100%;
+  margin: 0px;
+  padding: 20px 20px 20px 20px;
   text-decoration: none;
   color: white;
+  border-bottom: white solid 1px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar:hover .link {
+  display: flex;
+  align-items: center;
+}
+.navbar a > p {
+  display: none;
+}
+.navbar:hover a > p {
+  display: flex;
+  width: 15vw;
+  text-align: right;
+}
+.linkTitle {
+  margin: 0;
+  text-align: end;
+}
+.link:hover {
+  background-color: white;
+  color: #554269;
+}
+.link:hover svg {
+  filter: invert(27%) sepia(17%) saturate(1084%) hue-rotate(227deg)
+    brightness(95%) contrast(93%);
 }
