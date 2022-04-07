@@ -8,6 +8,7 @@ import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Login from "./components/Login/Login";
 import Error from "./components/Error/Error";
+import Signup from "./components/Signup/Signup";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="login" element={<Login />} />
             <Route path="error" element={<Error />} />
+            <Route path="signup" element={<Signup />} />
           </Route>
         </Routes>
       </BrowserRouter>
