@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #5a5388;
+  background-color: #554269;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -13,17 +13,17 @@
 .navbar svg {
   filter: invert(100%) sepia(0%) saturate(525%) hue-rotate(253deg)
     brightness(106%) contrast(102%);
-  height: 40px;
+  height: 30px;
 }
 .logo {
   width: 100%;
   max-width: 100%;
-  height: 60px;
+  min-height: 60px;
   display: flex;
   align-items: center;
   text-align: center;
-  background-color: #554269;
-  font-size: 1.05rem;
+  background-color: #71578b;
+  font-size: 1.3rem;
   margin: 0;
   justify-content: center;
 }
@@ -32,21 +32,25 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding-top: 15px;
 }
 
 .link {
   text-decoration: none;
   color: white;
   font-size: 24px;
-  margin: 10px 0px;
+  margin: 0px;
   display: flex;
   justify-content: space-between;
 
-  padding: 15px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
   border-bottom: white solid 1px;
 }
 .link:hover {
   background-color: white;
-  color: #5a5388;
+  color: #554269;
+}
+
+.link:hover svg {
+  filter: invert(27%) sepia(17%) saturate(1084%) hue-rotate(227deg)
+    brightness(95%) contrast(93%);
 }
