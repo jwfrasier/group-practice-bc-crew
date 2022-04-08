@@ -20,6 +20,7 @@ export const Container = styled.div`
   width: 100%;
   min-height: 100%;
   padding: 20px;
+  background-color: #e3ffff;
 `;
 
 export const Input = styled.input`

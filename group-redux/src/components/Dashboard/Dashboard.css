@@ -1,20 +1,199 @@
 .dashboardContainer {
-  display: grid;
-  place-items: center;
-  width: 100%;
+  margin-left: 25vw;
+  background-color: #e3ffff;
   height: 100vh;
 }
 
-.textContent {
-  background-color: black;
-  padding: 30px;
-  width: 50%;
-  border-radius: 20px;
-  text-align: center;
-  color: white;
-  margin-bottom: 1rem;
+.searchInputDashboard {
+  background-color: white;
+  border: none;
+  outline: none;
 }
 
-.header {
-  font-weight: 400;
+.searchButtonDashboard {
+  color: #42cdca;
+  border: none;
+  border-radius: 8rem;
+  background-color: white;
+  font-size: 15px;
+}
+
+.searchContainer {
+  padding: 1rem;
+  display: flex;
+  justify-content: right;
+  background-color: #e3ffff;
+}
+
+.searchContent {
+  background-color: white;
+  padding: 1%;
+  border-radius: 0.6rem;
+}
+
+.firstContainer {
+  background-color: #e3ffff;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+.box1 {
+  height: 3rem;
+  width: 23%;
+  background-color: #4fa2d2;
+  border-radius: 0.8rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.secondContainer {
+  background-color: #e3ffff;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-bottom: 1%;
+}
+
+.box2-1 {
+  background-color: white;
+  height: 10rem;
+  width: 60%;
+  display: flex;
+  padding: 2%;
+  justify-content: space-between;
+  border-radius: 0.8rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.box2-1text {
+  background-color: white;
+  height: 100%;
+  width: 56%;
+}
+
+.textbox2 {
+  color: #554269;
+  margin: 1%;
+}
+
+.textbox2-1 {
+  margin-bottom: 2%;
+}
+
+.textbox2-2 {
+  margin-bottom: 4%;
+}
+
+.box2-1pic {
+  background-color: #42cdca;
+  height: 100%;
+  width: 36%;
+  border-radius: 0.8rem;
+}
+
+.box-2pic {
+  background-color: #42cdca;
+  height: 76%;
+  width: 90%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.box2-2 {
+  background-color: white;
+  height: 12rem;
+  width: 34%;
+  margin-bottom: 2%;
+  border-radius: 0.8rem;
+  display: grid;
+  place-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.box2-2pic {
+  background-color: #42cdca;
+  height: 100%;
+  width: 100%;
+  padding: 1%;
+}
+
+.thirdContainer {
+  background-color: #e3ffff;
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+.box3-1 {
+  height: 90%;
+  width: 43%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.6rem;
+  padding: 2%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.box3-2 {
+  height: 100%;
+  width: 52%;
+  background-color: white;
+  padding-right: 3%;
+  padding-top: 0px;
+  padding-left: 3%;
+  border-radius: 0.6rem;
+  margin-left: 2.5%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.box3-1pic {
+  background-color: #42cdca;
+  height: 30%;
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.box3-1text {
+  background-color: white;
+  height: 15%;
+  width: 100%;
+  margin-bottom: 3%;
+  color: #554269;
+}
+
+.box3-1container {
+  background-color: white;
+  height: 47%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box3-1small {
+  background-color: white;
+  height: 100%;
+  width: 24%;
+  color: #554269;
+}
+
+.box3-2text {
+  background-color: white;
+  height: 15%;
+  width: 100%;
+  border-radius: 0.8rem;
+  color: #554269;
+}
+
+.box3-2pic {
+  background-color: #42cdca;
+  height: 70%;
+  width: 100%;
+  border-radius: 0.8rem;
 }
