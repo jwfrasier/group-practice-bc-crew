@@ -26,6 +26,7 @@ export default function Signup() {
       payload: e.target.value,
     });
   };
+  // updated
   //login
   // const login = async () => {
   //   let data = await userSignIn(loginField, loginPassword);
